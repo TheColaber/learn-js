@@ -131,3 +131,24 @@ if ("500" == 500) { // Notice 2 equal signs!
 // Before running this, what do we expect to appear in the console?
 // Run it! We should get: "Here, we see that both 500 values are equal but they both have different datatypes.".
 // One last thing we can add to if statements. But before we do, let's learn about variables!
+// Variables are used for storing datatypes! You create a variable like this:
+var variableName = DATATYPE;
+// We start with "var", name it, and set it equal to a value.
+// In JS, there are some restrictions for naming variables.
+// You can only use letters, numbers, and underscore. Otherwise, you may get an error.
+// In my example above, I used camel casing for the variable name.
+// If you can imagine a camel, you can see humps. You can imagine each hump as a capital letter.
+// For example something like this: cammelCasingIsFun
+// You can see that the first word is completely lowercase, and then each new work starts with a captital letter.
+// Of cource you can name variables how you like!
+// However, be careful how you name it! It may be something already used! For example, if you say:
+var console = "HA HA HA"; // DON'T DO THIS
+// You can now no longer use console.log as console now is "HA HA HA"!
+// We can access our variable's value by simply calling it's name.
+// Try the following:
+var myName = "Bob";
+console.log("My name is " + myName);
+// You can always change the value of you variable like this:
+myName = "Sam";
+// In my variable examples above, I have been using the var keyword, however you can can also use a few others.
+// TBC
