@@ -151,4 +151,43 @@ console.log("My name is " + myName);
 // You can always change the value of you variable like this:
 myName = "Sam";
 // In my variable examples above, I have been using the var keyword, however you can can also use a few others.
+// Each keyword has a purpose, so let me share the others that exsit and also their purpose.
+var pie = "tasty";
+const food = "good";
+let coolness = "the best";
+// var is a globaly scoped variable. This means that:
+if (true) {
+    var testing = true;
+}
+console.log(testing);
+// Will give console.log true.
+// Then try replacing the var keyword with let or const, and it won't work.
+// Instead, "testing is not defined". This is because const and let are locally scoped.
+// Scoping is the context that variable can be used it. However there is a problem with var which some people dislike.
+// Try doing the following.
+if (false) {
+    var variable = "pie!";
+}
+console.log(variable);
+// Before you run this, what do you expect. I would expect an error saying that variable is undefined right?
+// This is not the case. In JS because the variable is globally scoped, the variable is created, but undefined.
+// And this is one of the reasons people do not like var so much.
+// If you make an error like in the example above, you want to see an error, but you don't.
+// It will make you think that for some reason, JS is broken when you try to set it to "pie!".
+// That's about var.
+// let is localy scoped. That is it's main purpose.
+// const is very simple. It is locally scoped like let, but has one big difference.
+// const cannot be reset. This means once you set it, you cannot change it at all.
+// Try the following:
+const amazing = "not changabke";
+amazing = "see?"
+// In the console, "Uncaught TypeError: Assignment to constant variable."
+// So those are our variable keywords.
+
+
+// Let's learn another datatype. An array.
+// An array is also known as a list. A list of datatypes!
+// Analyze the following:
+let newArray = [56, 50, 80, 78, 96, 100, 100, 100, 100, 98];
+// You could imagine these being the scores of all the people who took a test.
 // TBC
